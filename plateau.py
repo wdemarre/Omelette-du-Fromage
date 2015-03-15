@@ -62,7 +62,15 @@ class Plateau:
             string: Retourne la chaîne de caractères à afficher.
         """
 
-        pass
+        plateau = " +-0-+-1-+-2-+\n"
+        for i in range(0, 3):
+            plateau += str(i)
+            for j in range(0, 3):
+                plateau += "| " + str(self.cases[i, j]) + " "
+            plateau += "|\n"
+            plateau += " +---+---+---+\n"
+
+        return plateau
 
     def non_plein(self):
         """
