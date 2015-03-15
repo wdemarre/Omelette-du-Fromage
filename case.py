@@ -69,3 +69,12 @@ class Case:
         assert pion in [" ", "O", "X"], "Case: pion doit être ' ', 'O' ou 'X'."
 
         return self.contenu == pion
+
+    def __str__(self):
+        """Méthode pour afficher le contenu de la case
+
+        Returns:
+            string: Retourne la chaîne de caractères à afficher.
+        """
+
+        return self.contenu
